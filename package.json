@@ -9,13 +9,16 @@
     "style:lint": "stylelint src/styles/*.scss --syntax scss || true",
     "build:styles": "npm run style:lint && npm run style:css && npm run style:autoprefixer",
     "build:images": "imagemin src/images/**/* --out-dir=dist/images",
-    "build:scripts": "webpack --mode=production",
+    "build:scripts": "webpack -p",
     "build:templates": "posthtml -c posthtml.json",
+    "build": "run-p build:*",
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
     "watch:styles": "onchange \"src/styles\" -- npm run build:styles",
     "watch:images": "onchange \"src/images\" -- npm run build:images",
-    "watch:scripts": "onchange \"src/scripts\" -- webpack --mode=development",
-    "watch:templates": "onchange \"src/templates\" -- npm run build:templates"
+    "watch:scripts": "onchange \"src/scripts\" -- webpack -d",
+    "watch:templates": "onchange \"src/templates\" -- npm run build:templates",
+    "watch": "run-p serve watch:*",
+    "dev": "npm run build && npm run watch"
   },
   "author": {
     "name": "Tanju Yıldız",
@@ -50,6 +53,7 @@
     "htmlnano": "^0.2.5",
     "imagemin-cli": "^5.1.0",
     "node-sass": "^4.14.0",
+    "npm-run-all": "^4.1.5",
     "onchange": "^6.1.1",
     "postcss-cli": "^7.1.0",
     "posthtml": "^0.12.3",
