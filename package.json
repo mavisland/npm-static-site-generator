@@ -8,7 +8,9 @@
     "style:css": "node-sass --output-style compressed -o dist/css src/styles",
     "style:autoprefixer": "postcss -u autoprefixer -r dist/css/*.css",
     "style:lint": "stylelint src/styles/*.scss --syntax scss || true",
-    "build:styles": "npm run style:lint && npm run style:css && npm run style:autoprefixer"
+    "build:styles": "npm run style:lint && npm run style:css && npm run style:autoprefixer",
+    "watch:styles": "onchange \"src/styles\" -- npm run build:styles",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\""
   },
   "author": {
     "name": "Tanju Yıldız",
@@ -35,7 +37,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.7",
     "node-sass": "^4.14.0",
+    "onchange": "^6.1.1",
     "postcss-cli": "^7.1.0",
     "stylelint": "^13.3.3"
   }
