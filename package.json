@@ -15,7 +15,7 @@
     "watch:styles": "onchange \"src/styles\" -- npm run build:styles",
     "watch:images": "onchange \"src/images\" -- npm run build:images",
     "watch:scripts": "onchange \"src/scripts\" -- webpack --mode=development",
-    "watch:templates": "onchange \"src/views\" -- npm run build:templates"
+    "watch:templates": "onchange \"src/templates\" -- npm run build:templates"
   },
   "author": {
     "name": "Tanju Yıldız",
@@ -54,6 +54,7 @@
     "postcss-cli": "^7.1.0",
     "posthtml": "^0.12.3",
     "posthtml-cli": "^0.5.4",
+    "posthtml-extend": "^0.3.0",
     "posthtml-modules": "^0.6.0",
     "stylelint": "^13.3.3",
     "webpack": "^4.43.0",

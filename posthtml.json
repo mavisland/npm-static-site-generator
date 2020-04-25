@@ -6,6 +6,9 @@
       "root": "./src/templates",
       "initial": true
     },
+    "posthtml-extend": {
+      "root": "./src/templates/layouts"
+    },
     "htmlnano": {}
   }
 }
