@@ -1,0 +1,11 @@
+{
+  "input": "src/templates/*.html",
+  "output": "dist",
+  "plugins": {
+    "posthtml-modules": {
+      "root": "./src/templates",
+      "initial": true
+    },
+    "htmlnano": {}
+  }
+}
