@@ -4,7 +4,11 @@
   "description": "Build a static website without frameworks using npm scripts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style:css": "node-sass --output-style compressed -o dist/css src/styles",
+    "style:autoprefixer": "postcss -u autoprefixer -r dist/css/*.css",
+    "style:lint": "stylelint src/styles/*.scss --syntax scss || true",
+    "build:styles": "npm run style:lint && npm run style:css && npm run style:autoprefixer"
   },
   "author": {
     "name": "Tanju Yıldız",
@@ -28,5 +32,11 @@
   "homepage": "https://github.com/mavisland/static-website-generator#readme",
   "bugs": {
     "url": "https://github.com/mavisland/static-website-generator/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.14.0",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.3.3"
   }
 }
