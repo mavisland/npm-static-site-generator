@@ -1,13 +1,19 @@
 module.exports = {
-  entry: "./src/scripts/main.js",
+  entry: "./src/js/main.js",
   output: {
-    path: __dirname + "/dist/js",
+    path: __dirname + "/dist",
     filename: "bundle.js",
   },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        enforce: "pre",
+        test: /.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+      },
+      {
+        test: /.m?js$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
