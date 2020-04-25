@@ -1,0 +1,32 @@
+{
+  "name": "static-website-generator",
+  "version": "1.0.0",
+  "description": "Build a static website without frameworks using npm scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Tanju Yıldız",
+    "email": "ben@tanjuyildiz.com",
+    "url": "https://tanjuyildiz.com"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "scss",
+    "sass",
+    "webpack",
+    "static-site-generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavisland/static-website-generator.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mavisland/static-website-generator#readme",
+  "bugs": {
+    "url": "https://github.com/mavisland/static-website-generator/issues"
+  }
+}
