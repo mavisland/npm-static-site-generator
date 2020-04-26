@@ -1,0 +1,12 @@
+.sidebar {
+  background: #f16529;
+  border-top: 20px solid #e44d26;
+  color: white;
+  padding: 0px 5% 10px;
+
+  @media only screen and (min-width: 768px) {
+    box-shadow: 0 5px 10px #aaa;
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+}

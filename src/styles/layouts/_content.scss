@@ -1,0 +1,21 @@
+.content {
+  padding: 30px 0;
+}
+
+.content-wrapper {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.main {
+  article h1 {
+    font-size: 2em;
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 72%;
+    max-width: 72%;
+    padding-right: 30px;
+  }
+}

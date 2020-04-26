@@ -1,17 +1,18 @@
-@import "variables";
+// Variables
+@import "abstracts/variables";
 
-* {
-  &,
-  &:before,
-  &:after {
-    box-sizing: border-box;
-  }
-}
+// normalize.css
+@import "../../node_modules/normalize.css/normalize";
 
-body {
-  background-color: $body-bg;
-  color: $body-color;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-}
+@import "base/generic";
+
+// Components
+@import "components/wrapper";
+@import "components/utilities";
+
+// Layouts
+@import "layouts/print";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/content";
+@import "layouts/sidebar";
