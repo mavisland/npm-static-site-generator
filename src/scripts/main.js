@@ -1,1 +1,1 @@
-console.log("Static Website Generator");
+console.log("Static Site Generator");

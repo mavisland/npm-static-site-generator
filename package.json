@@ -1,5 +1,5 @@
 {
-  "name": "static-website-generator",
+  "name": "npm-static-site-generator",
   "version": "1.0.0",
   "description": "Build a static website without frameworks using npm scripts",
   "main": "index.js",
@@ -36,12 +36,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mavisland/static-website-generator.git"
+    "url": "git+https://github.com/mavisland/npm-static-site-generator.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/mavisland/static-website-generator#readme",
+  "homepage": "https://github.com/mavisland/npm-static-site-generator#readme",
   "bugs": {
-    "url": "https://github.com/mavisland/static-website-generator/issues"
+    "url": "https://github.com/mavisland/npm-static-site-generator/issues"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.9.5",
